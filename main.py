@@ -1,4 +1,3 @@
-import pandas as pd 
 from contacto import contacto
 
 class ConnectMe:
@@ -35,10 +34,12 @@ class ConnectMe:
             return "No se encuentra registrado"
         
     def Eliminar_Contacto (self, correo):
-        for i in self.lista_contactos:
-            if i.correo != correo:
-                self.lista_contactos.remove(i)
-                 
+        lista = self.lista_contactos
+        for i in lista:
+            if i.correo == correo:
+                lista.remove(i)
+                self.lista_contactos = lista
+        return self.lista_contactos         
     def main (self):
         while (True):
             print("-" * 30 + "MENU PRINCIPAL" + "-"*30)
@@ -46,6 +47,7 @@ class ConnectMe:
             print("2. Listar Contactos")
             print("3. Buscar Contacto")
             print("4. Eliminar Contacto")
+            print()
             opcion = int(input("Seleccione una opcion: "))
 
             if opcion == 1:
