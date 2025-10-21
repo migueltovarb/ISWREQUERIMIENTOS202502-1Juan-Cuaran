@@ -1,0 +1,51 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
+  <diagram name="Página-1" id="FD_3RPOK8xEgcTnXzUu5">
+    <mxGraphModel dx="1042" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JpxTSG23MvUDDlAzvu9M-1" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="80" width="550" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="JpxTSG23MvUDDlAzvu9M-2" value="Page 1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;whiteSpace=wrap;" vertex="1" parent="JpxTSG23MvUDDlAzvu9M-1">
+          <mxGeometry x="60" y="12" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JpxTSG23MvUDDlAzvu9M-3" value="https://www.draw.io" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;rSize=0;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="JpxTSG23MvUDDlAzvu9M-1">
+          <mxGeometry x="130" y="60" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="JpxTSG23MvUDDlAzvu9M-4" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Registrar Acceso del visitante&lt;/b&gt;&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="JpxTSG23MvUDDlAzvu9M-1">
+          <mxGeometry x="135" y="120" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JpxTSG23MvUDDlAzvu9M-5" value="*Credencial" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="JpxTSG23MvUDDlAzvu9M-1">
+          <mxGeometry x="135" y="175" width="75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JpxTSG23MvUDDlAzvu9M-6" value="*Puerta/Punto Acceso" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="JpxTSG23MvUDDlAzvu9M-1">
+          <mxGeometry x="135" y="205" width="125" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JpxTSG23MvUDDlAzvu9M-7" value="*Estado" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="JpxTSG23MvUDDlAzvu9M-1">
+          <mxGeometry x="135" y="235" width="75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JpxTSG23MvUDDlAzvu9M-8" value="" style="rounded=1;fillColor=#F1F2F4;strokeColor=none;html=1;whiteSpace=wrap;fontColor=#596780;align=left;fontSize=12;spacingLeft=10;sketch=0;" vertex="1" parent="JpxTSG23MvUDDlAzvu9M-1">
+          <mxGeometry x="270" y="242.5" width="180" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="JpxTSG23MvUDDlAzvu9M-9" value="" style="shape=triangle;direction=south;fillColor=#596780;strokeColor=none;html=1;sketch=0;" vertex="1" parent="JpxTSG23MvUDDlAzvu9M-8">
+          <mxGeometry x="1" y="0.5" width="12" height="6" relative="1" as="geometry">
+            <mxPoint x="-20" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JpxTSG23MvUDDlAzvu9M-10" value="" style="rounded=1;arcSize=9;fillColor=#F7F8F9;align=left;spacingLeft=5;strokeColor=#DEE1E6;html=1;strokeWidth=2;fontColor=#596780;fontSize=12" vertex="1" parent="JpxTSG23MvUDDlAzvu9M-1">
+          <mxGeometry x="270" y="182.5" width="180" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="JpxTSG23MvUDDlAzvu9M-11" value="" style="rounded=1;arcSize=9;fillColor=#F7F8F9;align=left;spacingLeft=5;strokeColor=#DEE1E6;html=1;strokeWidth=2;fontColor=#596780;fontSize=12" vertex="1" parent="JpxTSG23MvUDDlAzvu9M-1">
+          <mxGeometry x="270" y="212.5" width="180" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="JpxTSG23MvUDDlAzvu9M-12" value="Registrar Acceso" style="rounded=1;fillColor=#0057D8;strokeColor=none;html=1;whiteSpace=wrap;fontColor=#ffffff;align=center;verticalAlign=middle;fontStyle=0;fontSize=12;sketch=0;" vertex="1" parent="JpxTSG23MvUDDlAzvu9M-1">
+          <mxGeometry x="300" y="320" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JpxTSG23MvUDDlAzvu9M-14" value="Cancelar" style="rounded=1;fillColor=#647687;strokeColor=#314354;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;fontStyle=0;fontSize=12;sketch=0;fontColor=#ffffff;" vertex="1" parent="JpxTSG23MvUDDlAzvu9M-1">
+          <mxGeometry x="160" y="320" width="110" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

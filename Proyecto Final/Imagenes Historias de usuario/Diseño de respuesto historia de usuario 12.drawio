@@ -1,0 +1,15 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Página-1" id="RtG6fXheVe2RV_2jD9n8">
+    <mxGraphModel dx="1864" dy="1453" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="583" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="&lt;img src=&quot;https://github.com/user-attachments/assets/022a6ae2-1a7c-45cb-a97c-ce872c547823&quot; alt=&quot;Image&quot; height=&quot;2044&quot; width=&quot;2284&quot;&gt;" link="&lt;img src=&quot;https://github.com/user-attachments/assets/022a6ae2-1a7c-45cb-a97c-ce872c547823&quot; alt=&quot;Image&quot; height=&quot;2044&quot; width=&quot;2284&quot;&gt;" id="nfnbqLEKTf86EQFIXJ54-2">
+          <mxCell style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="-300" y="-100" width="50" height="1650" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
