@@ -1,0 +1,21 @@
+html{
+    font-size: 12 px;
+}
+
+body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+title {
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+}
+.banner {
+        background: linear-gradient(to right,#122B59, #1CA9E0  );
+        color: white;
+        font-weight: 600;
+        padding: 10 px 20 px;
+        text-align: center;
+    }
+
