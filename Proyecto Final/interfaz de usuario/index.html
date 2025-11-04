@@ -10,7 +10,7 @@
     <div class="container">
         <div class="header">
             <h1>Sistema de Control de Acceso Digital</h1>
-            <p class="subtitle">Style Tile -v.1</p>
+            <p class="subtitle">Style Tile -v1.0</p>
         </div>
         <!-- Paleta de Colores Principal -->
         <div class="section">
@@ -126,9 +126,7 @@
             <h2 class = "subsection-title">Ejemplos</h2>
             <div class="typography-sample">
                 <div class="type-display body-text">
-                    El sistema registrará la entrada y salida de visitantes incluyendo fecha, hora, nombre completo, 
-                    número de identificación, tipo de visitante y puerta de acceso utilizada. Esta información 
-                    quedará almacenada para consultas posteriores del personal autorizado.
+                    Digite la credencial del visitante que quire acceder al Edificio
                 </div>
                 <div class="type-info">Segoe UI Regular, 16px, #475569, line-height: 1.6</div>
                 <div class="type-usage">Uso: Texto descriptivo, mensajes, instrucciones</div>
@@ -145,7 +143,7 @@
                 <div class="type-info">Segoe UI Regular, 13px, #64748b</div>
                 <div class="type-usage">Uso: Texto pequeño, metadata, información secundaria</div>
             </div>
-                    
+
         <!-- Botones -->
         <div class="section">
             <h2 class="section-title">Botones y Acciones</h2>
@@ -164,8 +162,13 @@
                     </div>
                     
                     <div class="button-sample">
-                        <button class="btn btn-primary">Consultar Registros</button>
+                        <button class="btn btn-primary">Consultar Reportes</button>
                         <span class="caption">Acceso a información</span>
+                    </div>
+
+                    <div class="button-sample">
+                        <button class="btn btn-primary">Restringir Visitante</button>
+                        <span class="caption">Restringir un visitante por un motivo</span>
                     </div>
                 </div>
             </div>
@@ -182,20 +185,15 @@
                         <button class="btn btn-danger">Denegar Acceso</button>
                         <span class="caption">Rechazos y denegaciones</span>
                     </div>
-                    
-                    <div class="button-sample">
-                        <button class="btn btn-warning">Restringir Visitante</button>
-                        <span class="caption">Acciones de precaución</span>
-                    </div>
                 </div>
             </div>
             
             <div class="button-section">
-                <h3 class="subsection-title">Acciones Destructivas y Secundarias</h3>
+                <h3 class="subsection-title">Acciones Secundarias</h3>
                 <div class="button-grid">
                     <div class="button-sample">
-                        <button class="btn btn-danger-outline">Eliminar Credencial</button>
-                        <span class="caption">Eliminación con confirmación</span>
+                        <button class="btn btn-danger-outline">Eliminar</button>
+                        <span class="caption">Eliminación credenciales o usuaios</span>
                     </div>
                     
                     <div class="button-sample">
@@ -214,7 +212,7 @@
                 <h3 class="subsection-title">Botones Especiales</h3>
                 <div class="button-grid">
                     <div class="button-sample">
-                        <button class="btn btn-emergency">🚨 Activar Modo Emergencia</button>
+                        <button class="btn btn-emergency">Modo Emergencia</button>
                         <span class="caption">Evacuación y emergencias</span>
                     </div>
                     
@@ -295,13 +293,7 @@
                         <div class="state-title">Credencial Activa</div>
                         <div class="state-desc">Válida hasta: 30/12/2025</div>
                     </div>
-                    
-                    <div class="state-card state-expiring">
-                        <span class="state-icon">⚠️</span>
-                        <div class="state-title">Por Vencer</div>
-                        <div class="state-desc">Vence en 3 días</div>
-                    </div>
-                    
+                                      
                     <div class="state-card state-expired">
                         <span class="state-icon">🔒</span>
                         <div class="state-title">Credencial Vencida</div>
@@ -320,8 +312,7 @@
                     </div>
                     
                     <div class="state-card state-failed-attempts">
-                        <span class="state-icon">⚡</span>
-                        <div class="state-title">Intentos Fallidos</div>
+                        <div class="state-title-attempts">Intentos Fallidos</div>
                         <div class="state-desc">3 intentos rechazados - Terminal 02</div>
                     </div>
                 </div>
@@ -330,7 +321,7 @@
         
         <!-- Formularios -->
         <div class="section">
-            <h2 class="section-title">Elementos de Formulario</h2>
+            <h2 class="section-title">Ejemplos de Paginas y Formularios</h2>
             
             <div class="form-examples">
                 <div class="form-column">
@@ -364,7 +355,7 @@
                         <div class="form-group">
                             <label class="form-label">Fotografía *</label>
                             <input type="file" class="form-input-file" accept="image/*">
-                            <span class="form-hint">Formatos permitidos: JPG, PNG (máx. 2MB)</span>
+                            <span class="form-hint">Formatos permitidos: JPG (máx. 2MB)</span>
                         </div>
                     </div>
                 </div>
@@ -426,7 +417,7 @@
         
         <!-- Tarjetas e Información -->
         <div class="section">
-            <h2 class="section-title">Tarjetas de Información</h2>
+            <h2 class="section-title">Reportes del sistema</h2>
             
             <div class="card-examples">
                 <div class="info-card card-visitor">
@@ -626,14 +617,6 @@
                     </div>
                 </div>
                 
-                <div class="message message-warning">
-                    <span class="message-icon">⚠️</span>
-                    <div class="message-content">
-                        <div class="message-title">Credencial por vencer</div>
-                        <div class="message-text">La credencial XYZ789 expirará en 3 días. Considere renovarla.</div>
-                    </div>
-                </div>
-                
                 <div class="message message-info">
                     <span class="message-icon">ℹ️</span>
                     <div class="message-content">
@@ -643,108 +626,9 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Sistema de Espaciado -->
-        <div class="section">
-            <h2 class="section-title">Sistema de Espaciado</h2>
-            <div class="spacing-examples">
-                <div class="spacing-item">
-                    <div class="spacing-box" style="width: 8px; height: 8px;"></div>
-                    <span class="spacing-label">XS - 8px</span>
-                    <span class="spacing-desc">Entre elementos muy relacionados</span>
-                </div>
-                
-                <div class="spacing-item">
-                    <div class="spacing-box" style="width: 16px; height: 16px;"></div>
-                    <span class="spacing-label">S - 16px</span>
-                    <span class="spacing-desc">Entre campos de formulario</span>
-                </div>
-                
-                <div class="spacing-item">
-                    <div class="spacing-box" style="width: 24px; height: 24px;"></div>
-                    <span class="spacing-label">M - 24px</span>
-                    <span class="spacing-desc">Entre secciones de formulario</span>
-                </div>
-                
-                <div class="spacing-item">
-                    <div class="spacing-box" style="width: 32px; height: 32px;"></div>
-                    <span class="spacing-label">L - 32px</span>
-                    <span class="spacing-desc">Entre componentes principales</span>
-                </div>
-                
-                <div class="spacing-item">
-                    <div class="spacing-box" style="width: 48px; height: 48px;"></div>
-                    <span class="spacing-label">XL - 48px</span>
-                    <span class="spacing-desc">Separación de módulos</span>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Principios de Diseño -->
-        <div class="section">
-            <h2 class="section-title">Principios de Diseño</h2>
-            
-            <div class="principles-grid">
-                <div class="principle-card">
-                    <div class="principle-icon">👁️</div>
-                    <h3 class="principle-title">Claridad Visual</h3>
-                    <p class="principle-text">
-                        Todos los elementos críticos (estados de acceso, alertas de seguridad) deben ser 
-                        inmediatamente reconocibles. Uso de colores semafóricos: verde para acceso concedido, 
-                        rojo para denegado, amarillo para advertencias.
-                    </p>
-                </div>
-                
-                <div class="principle-card">
-                    <div class="principle-icon">♿</div>
-                    <h3 class="principle-title">Contraste Accesible</h3>
-                    <p class="principle-text">
-                        Ratio de contraste mínimo de 4.5:1 entre texto y fondo (WCAG AA). Botones con tamaño 
-                        mínimo de 44x44px para fácil interacción. Tipografía clara, sin fuentes decorativas.
-                    </p>
-                </div>
-                
-                <div class="principle-card">
-                    <div class="principle-icon">💬</div>
-                    <h3 class="principle-title">Lenguaje Simple</h3>
-                    <p class="principle-text">
-                        Evitar jerga técnica. Usar "Generar Credencial" en lugar de "Inicializar proceso de 
-                        autenticación". Mensajes directos: "Acceso Concedido" en lugar de "Validación exitosa".
-                    </p>
-                </div>
-                
-                <div class="principle-card">
-                    <div class="principle-icon">⚡</div>
-                    <h3 class="principle-title">Retroalimentación Inmediata</h3>
-                    <p class="principle-text">
-                        Cada acción debe tener respuesta visual en menos de 0.3 segundos. Estados de carga, 
-                        mensajes de confirmación, cambios de color en botones al hacer hover.
-                    </p>
-                </div>
-                
-                <div class="principle-card">
-                    <div class="principle-icon">🎯</div>
-                    <h3 class="principle-title">Jerarquía de Información</h3>
-                    <p class="principle-text">
-                        Información crítica (código de credencial, estado de acceso) debe destacarse. 
-                        Uso de tamaños, pesos y colores para guiar la atención del usuario.
-                    </p>
-                </div>
-                
-                <div class="principle-card">
-                    <div class="principle-icon">🔒</div>
-                    <h3 class="principle-title">Seguridad Visible</h3>
-                    <p class="principle-text">
-                        Estados de seguridad siempre visibles: indicador de sesión activa, modo offline/online, 
-                        alertas de intentos fallidos destacadas en rojo.
-                    </p>
-                </div>
-            </div>
-        </div>
-        
         <!-- Layouts de Pantalla -->
         <div class="section">
-            <h2 class="section-title">Estructura de Layouts</h2>
+            <h2 class="section-title2">Estructura de la Pantalla</h2>
             
             <div class="layout-examples">
                 <div class="layout-card">
@@ -773,45 +657,18 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="layout-card">
-                    <div class="layout-title">Formulario de Registro</div>
-                    <div class="layout-wireframe">
-                        <div class="wireframe-form-header">
-                            <div class="wireframe-element" style="width: 250px; height: 40px;">Registrar Visitante</div>
-                        </div>
-                        <div class="wireframe-form-body">
-                            <div class="wireframe-element form-field">Nombre Completo</div>
-                            <div class="wireframe-element form-field">Identificación</div>
-                            <div class="wireframe-element form-field">Tipo de Visitante</div>
-                            <div class="wireframe-element form-field">Motivo</div>
-                            <div class="wireframe-element form-field">Fotografía</div>
-                        </div>
-                        <div class="wireframe-form-footer">
-                            <div class="wireframe-element btn-wireframe primary">Generar Credencial</div>
-                            <div class="wireframe-element btn-wireframe secondary">Cancelar</div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         
         <!-- Footer -->
         <div class="footer">
             <p class="footer-text">
-                <strong>Sistema de Control de Acceso Digital</strong> - Style Tile v2.0 | 
-                Diseñado para máxima claridad y usabilidad operativa
+                <strong>Sistema de Control de Acceso a un Edificio</strong> - Style Tile v1.0 | 
             </p>
             <p class="footer-note">
-                Este documento define los estándares visuales para todas las interfaces del sistema. 
-                Mantener consistencia en colores, tipografía y componentes en todas las pantallas.
+                Juan Esteban Cuaran Santander, Universidad Cooperativa de Colombia 2025
             </p>
         </div>
     </div>
 </body>
-</html><div class="spacing-box" style="width: 4px; height: 4px;"></div>
-                    <span class="spacing-label">XXS - 4px</span>
-                    <span class="spacing-desc">Espaciado mínimo (bordes, separadores)</span>
-                </div>
-                
-                <div class="spacing-item">
+</html>

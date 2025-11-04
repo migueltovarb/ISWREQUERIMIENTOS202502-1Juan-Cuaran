@@ -228,6 +228,7 @@ h1 {
     font-size: 16px;
     color: var(--text-secondary);
     line-height: 1.6;
+    font-weight: 600;
 }
 
 .label-text {
@@ -255,15 +256,15 @@ h1 {
     letter-spacing: 2px;
 }
 
-/* ==================== BOTONES ==================== */
+/*  BOTONES  */
 .button-section {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .button-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 20px;
+    gap: 30px;
 }
 
 .button-sample {
@@ -328,12 +329,13 @@ h1 {
 }
 
 .btn-secondary {
-    background: var(--neutral);
-    color: white;
+    background: white;
+    color: var(--neutral);
+    border: 2px solid #4f5255;
 }
 
 .btn-secondary:hover {
-    background: #475569;
+    background: #4f5255;
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(100, 116, 139, 0.4);
 }
@@ -361,34 +363,37 @@ h1 {
 }
 
 .btn-emergency {
-    background: var(--emergency);
+    background: #d91200;
     color: white;
     font-size: 17px;
     font-weight: 700;
 }
 
 .btn-emergency:hover {
-    background: #c2410c;
+    background: #d91200;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(234, 88, 12, 0.5);
 }
 
 .btn-logout {
-    background: #334155;
+    background: #940c00;
     color: white;
 }
 
 .btn-logout:hover {
-    background: #1e293b;
+    background: #940c00;
+    transform: translateY(-2px);
 }
 
 .btn-info {
-    background: var(--info);
+    background: rgb(0, 0, 65);
     color: white;
 }
 
 .btn-info:hover {
-    background: #0369a1;
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    border: var(--primary-light);
 }
 
 /* ==================== ESTADOS DEL SISTEMA ==================== */
@@ -494,10 +499,19 @@ h1 {
     font-weight: 700;
 }
 
+.state-title-attempts {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
 .state-failed-attempts {
     background: #fef08a;
     color: #713f12;
     border-color: #eab308;
+    font-weight: 700;
+    text-align: center;
 }
 
 /* ==================== FORMULARIOS ==================== */
@@ -861,6 +875,16 @@ h1 {
 }
 
 /* ==================== LAYOUTS ==================== */
+
+.section-title2{
+    color: var(--text-primary);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--text-primary); 
+    text-align: center; 
+}
 .layout-examples {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
