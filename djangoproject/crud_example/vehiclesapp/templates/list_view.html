@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Vehículos</h1>
+<a href="/create/"><i class="fa fa-plus"></i></a>
+
+<table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+        <th>Placa</th>
+        <th>Marca</th>
+        <th>Color</th>
+        <th>Modelo</th>
+        <th>&nbsp;</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for e in database %}
+        <tr>
+            <td>{{ e.placa }}</td>
+            <td>{{ e.marca }}</td>
+            <td>{{ e.get_color_display }}</td>
+            <td>{{ e.modelo }}</td>
+            <td>
+                <a href="/update/{{ e.id }}"><i class="fa fa-edit"></i></a>
+                <a href="#" data-toggle="modal" data-target="#deleteModal{{ e.id }}">
+                    <i class="fa fa-trash text-danger"></i>
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% for data in database %}
+<div class="modal fade" id="deleteModal{{ data.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="/delete/{{ data.id }}/" method="post"> 
+                {% csrf_token %}
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Eliminar registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ¿Desea eliminar el registro con ID {{ data.id }}?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Eliminar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
+

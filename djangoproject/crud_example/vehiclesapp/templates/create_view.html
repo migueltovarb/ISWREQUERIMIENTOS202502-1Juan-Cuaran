@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Nuevo Vehiculo</h1>
+<form method="post" enctype="multipart/form-data">
+
+
+    {% csrf_token %}
+
+    <div class="form-group">
+        {{form.placa.label_tag}}
+        {{form.placa}}
+    </div>
+
+    <div class="form-group">
+        {{form.marca.label_tag}}
+        {{form.marca}}
+    </div>
+
+    <div class="form-group">
+        {{form.modelo.label_tag}}
+        {{form.modelo}}
+    </div>
+
+    <div class="form-group">
+        {{form.color.label_tag}}
+        {{form.color}}
+    </div>
+    <input type="submit" value= "Guardar" class="btn btn-primay">
+</form>
+{% endblock %}

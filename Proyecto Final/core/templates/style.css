@@ -1,0 +1,24 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: rgb(217, 201, 201);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;   
+}
+
+header {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    color: rgb(217, 201, 201);
+    font-weight: 600;
+    padding: 10 px 20 px;
+    text-align: center;
+}
