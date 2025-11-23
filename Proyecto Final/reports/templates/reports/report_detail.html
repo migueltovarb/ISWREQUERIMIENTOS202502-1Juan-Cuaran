@@ -45,7 +45,7 @@
     <div class="page-shell">
         <section class="hero">
             <h1>Detalle del reporte #{{ report.id }}</h1>
-            <p>Generado el {{ report.generated_at }}.</p>
+            <p>Generado el {{ report.generated_at|localtime }}.</p>
             <div class="meta">
                 <span>Filtro: {{ report.get_filter_by_display }}</span>
                 {% if report.filter_by == 'HORA' %}
