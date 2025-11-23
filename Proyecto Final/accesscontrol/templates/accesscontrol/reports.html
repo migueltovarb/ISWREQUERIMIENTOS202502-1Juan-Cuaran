@@ -1,4 +1,5 @@
 {% load static %}
+{% load tz %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -126,7 +127,7 @@
                     <tbody>
                         {% for event in database %}
                         <tr>
-                            <td>{{ event.timestamp }}</td>
+                            <td>{{ event.timestamp|localtime }}</td>
                             <td>{{ event.access_point.name }}</td>
                             <td>{% if event.credential %}{{ event.credential.credential_code }}{% else %}N/A{% endif %}</td>
                             <td>{{ event.get_status_display }}</td>

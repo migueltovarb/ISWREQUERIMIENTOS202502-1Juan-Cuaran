@@ -8,10 +8,19 @@ import random
 
 def Asign_credential(request):
     context = {}
+    expiration_days = {
+        'TEMP': 2,
+        'PROV': 5,
+        'EMP': 14,
+    }
+    context['expiration_days'] = expiration_days
+
     visitor_id = request.GET.get('visitor_id') or request.POST.get('visitor_id')
     visitor = None
     if visitor_id:
         visitor = get_object_or_404(Visitor, pk=visitor_id)
+        context['current_days'] = expiration_days.get(visitor.visitor_type)
+        context['visitor_type_label'] = visitor.get_visitor_type_display()
 
     def generate_unique_code():
         code = None
@@ -22,11 +31,6 @@ def Asign_credential(request):
                 break
         return code
 
-    expiration_days = {
-        'TEMP': 2,
-        'PROV': 10,
-        'EMP': 20,
-    }
     if request.method == 'POST':
         if not visitor:
             messages.error(request, 'Visitante no especificado.')
